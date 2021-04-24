@@ -41,3 +41,14 @@ const arr2: MyList = [12, "test"]
 arr.push(12)
 // arr.push("23")
 // arr.push(true)
+
+// Generics
+class Observable<T> {
+    constructor(public value: T) {}
+}
+
+let x: Observable<number>;
+
+let y: Observable<Person>;
+
+let z = new Observable(23);
