@@ -19,3 +19,13 @@ var arr2 = [12, "test"];
 arr.push(12);
 // arr.push("23")
 // arr.push(true)
+// Generics
+var Observable = /** @class */ (function () {
+    function Observable(value) {
+        this.value = value;
+    }
+    return Observable;
+}());
+var x;
+var y;
+var z = new Observable(23);
